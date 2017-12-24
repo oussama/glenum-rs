@@ -3,4 +3,10 @@ name = "glenum"
 version = "0.1.0"
 authors = ["Oussama <md.oussama@gmail.com>"]
 
+
+description = "GL Enum values in an organized structures as described in from https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants"
+repository = "https://github.com/oussama/glenum-rs"
+keywords = ["webgl","opengl"]
+license = "Apache-2.0"
+documentation = "https://docs.rs/glenum"
 [dependencies]
