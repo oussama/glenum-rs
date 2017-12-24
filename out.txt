@@ -1,0 +1,1491 @@
+/// undefined
+Clearing buffers=undefined,
+/// undefined
+Constants passed to webglrenderingcontext.clear() to clear buffer masks.=undefined,
+/// undefined
+=undefined,
+/// Description
+Constant name=Value,
+/// Passed to clear to clear the current depth buffer.
+DepthBufferBit=0x00000100,
+/// Passed to clear to clear the current stencil buffer.
+StencilBufferBit=0x00000400,
+/// Passed to clear to clear the current color buffer.
+ColorBufferBit=0x00004000,
+/// undefined
+Rendering primitives=undefined,
+/// undefined
+Constants passed to webglrenderingcontext.drawelements() or webglrenderingcontext.drawarrays() to specify what kind of primitive to render.=undefined,
+/// undefined
+=undefined,
+/// Description
+Constant name=Value,
+/// Passed to drawElements or drawArrays to draw single points.
+Points=0x0000,
+/// Passed to drawElements or drawArrays to draw lines. Each vertex connects to the one after it.
+Lines=0x0001,
+/// Passed to drawElements or drawArrays to draw lines. Each set of two vertices is treated as a separate line segment.
+LineLoop=0x0002,
+/// Passed to drawElements or drawArrays to draw a connected group of line segments from the first vertex to the last.
+LineStrip=0x0003,
+/// Passed to drawElements or drawArrays to draw triangles. Each set of three vertices creates a separate triangle.
+Triangles=0x0004,
+/// Passed to drawElements or drawArrays to draw a connected group of triangles.
+TriangleStrip=0x0005,
+/// Passed to drawElements or drawArrays to draw a connected group of triangles. Each vertex connects to the previous and the first vertex in the fan.
+TriangleFan=0x0006,
+/// undefined
+Blending modes=undefined,
+/// undefined
+Constants passed to webglrenderingcontext.blendfunc() or webglrenderingcontext.blendfuncseparate() to specify the blending mode (for both, rbg and alpha, or separately).=undefined,
+/// undefined
+=undefined,
+/// Description
+Constant name=Value,
+/// Passed to blendFunc or blendFuncSeparate to turn off a component.
+Zero=0,
+/// Passed to blendFunc or blendFuncSeparate to turn on a component.
+One=1,
+/// Passed to blendFunc or blendFuncSeparate to multiply a component by the source elements color.
+SrcColor=0x0300,
+/// Passed to blendFunc or blendFuncSeparate to multiply a component by one minus the source elements color.
+OneMinusSrcColor=0x0301,
+/// Passed to blendFunc or blendFuncSeparate to multiply a component by the source's alpha.
+SrcAlpha=0x0302,
+/// Passed to blendFunc or blendFuncSeparate to multiply a component by one minus the source's alpha.
+OneMinusSrcAlpha=0x0303,
+/// Passed to blendFunc or blendFuncSeparate to multiply a component by the destination's alpha.
+DstAlpha=0x0304,
+/// Passed to blendFunc or blendFuncSeparate to multiply a component by one minus the destination's alpha.
+OneMinusDstAlpha=0x0305,
+/// Passed to blendFunc or blendFuncSeparate to multiply a component by the destination's color.
+DstColor=0x0306,
+/// Passed to blendFunc or blendFuncSeparate to multiply a component by one minus the destination's color.
+OneMinusDstColor=0x0307,
+/// Passed to blendFunc or blendFuncSeparate to multiply a component by the minimum of source's alpha or one minus the destination's alpha.
+SrcAlphaSaturate=0x0308,
+/// Passed to blendFunc or blendFuncSeparate to specify a constant color blend function.
+ConstantColor=0x8001,
+/// Passed to blendFunc or blendFuncSeparate to specify one minus a constant color blend function.
+OneMinusConstantColor=0x8002,
+/// Passed to blendFunc or blendFuncSeparate to specify a constant alpha blend function.
+ConstantAlpha=0x8003,
+/// Passed to blendFunc or blendFuncSeparate to specify one minus a constant alpha blend function.
+OneMinusConstantAlpha=0x8004,
+/// undefined
+Blending equations=undefined,
+/// undefined
+Constants passed to webglrenderingcontext.blendequation() or webglrenderingcontext.blendequationseparate() to control how the blending is calculated (for both, rbg and alpha, or separately).=undefined,
+/// undefined
+=undefined,
+/// Description
+Constant name=Value,
+/// Passed to blendEquation or blendEquationSeparate to set an addition blend function.
+FuncAdd=0x8006,
+/// Passed to blendEquation or blendEquationSeparate to specify a subtraction blend function (source - destination).
+FuncSubstract=0x800A,
+/// Passed to blendEquation or blendEquationSeparate to specify a reverse subtraction blend function (destination - source).
+FuncReverseSubtract=0x800B,
+/// undefined
+Getting gl parameter information=undefined,
+/// undefined
+Constants passed to webglrenderingcontext.getparameter() to specify what information to return.=undefined,
+/// undefined
+=undefined,
+/// Description
+Constant name=Value,
+/// Passed to getParameter to get the current RGB blend function.
+BlendEquation=0x8009,
+/// Passed to getParameter to get the current RGB blend function. Same as BLEND_EQUATION
+BlendEquationRgb=0x8009,
+/// Passed to getParameter to get the current alpha blend function. Same as BLEND_EQUATION
+BlendEquationAlpha=0x883D,
+/// Passed to getParameter to get the current destination RGB blend function.
+BlendDstRgb=0x80C8,
+/// Passed to getParameter to get the current destination RGB blend function.
+BlendSrcRgb=0x80C9,
+/// Passed to getParameter to get the current destination alpha blend function.
+BlendDstAlpha=0x80CA,
+/// Passed to getParameter to get the current source alpha blend function.
+BlendSrcAlpha=0x80CB,
+/// Passed to getParameter to return a the current blend color.
+BlendColor=0x8005,
+/// Passed to getParameter to get the array buffer binding.
+ArrayBufferBinding=0x8894,
+/// Passed to getParameter to get the current element array buffer.
+ElementArrayBufferBinding=0x8895,
+/// Passed to getParameter to get the current lineWidth (set by the lineWidth method).
+LineWidth=0x0B21,
+/// Passed to getParameter to get the current size of a point drawn with gl.POINTS
+AliasedPointSizeRange=0x846D,
+/// Passed to getParameter to get the range of available widths for a line. Returns a length-2 array with the lo value at 0, and hight at 1.
+AliasedLineWidthRange=0x846E,
+/// Passed to getParameter to get the current value of cullFace. Should return FRONT, BACK, or FRONT_AND_BACK
+CullFaceMode=0x0B45,
+/// Passed to getParameter to determine the current value of frontFace. Should return CW or CCW.
+FrontFace=0x0B46,
+/// Passed to getParameter to return a length-2 array of floats giving the current depth range.
+DepthRange=0x0B70,
+/// Passed to getParameter to determine if the depth write mask is enabled.
+DepthWritemask=0x0B72,
+/// Passed to getParameter to determine the current depth clear value.
+DepthClearValue=0x0B73,
+/// Passed to getParameter to get the current depth function. Returns NEVER, ALWAYS, LESS, EQUAL, LEQUAL, GREATER, GEQUAL, or NOTEQUAL.
+DepthFunc=0x0B74,
+/// Passed to getParameter to get the value the stencil will be cleared to.
+StencilClearValue=0x0B91,
+/// Passed to getParameter to get the current stencil function. Returns NEVER, ALWAYS, LESS, EQUAL, LEQUAL, GREATER, GEQUAL, or NOTEQUAL.
+StencilFunc=0x0B92,
+/// Passed to getParameter to get the current stencil fail function. Should return KEEP, REPLACE, INCR, DECR, INVERT, INCR_WRAP, or DECR_WRAP.
+StencilFail=0x0B94,
+/// Passed to getParameter to get the current stencil fail function should the depth buffer test fail. Should return KEEP, REPLACE, INCR, DECR, INVERT, INCR_WRAP, or DECR_WRAP.
+StencilPassDepthFail=0x0B95,
+/// Passed to getParameter to get the current stencil fail function should the depth buffer test pass. Should return KEEP, REPLACE, INCR, DECR, INVERT, INCR_WRAP, or DECR_WRAP.
+StencilPassDepthPass=0x0B96,
+/// Passed to getParameter to get the reference value used for stencil tests.
+StencilRef=0x0B97,
+///  
+StencilValueMask=0x0B93,
+///  
+StencilWritemask=0x0B98,
+///  
+StencilBackFunc=0x8800,
+///  
+StencilBackFail=0x8801,
+///  
+StencilBackPassDepthFail=0x8802,
+///  
+StencilBackPassDepthPass=0x8803,
+///  
+StencilBackRef=0x8CA3,
+///  
+StencilBackValueMask=0x8CA4,
+///  
+StencilBackWritemask=0x8CA5,
+/// Returns an Int32Array with four elements for the current viewport dimensions.
+Viewport=0x0BA2,
+/// Returns an Int32Array with four elements for the current scissor box dimensions.
+ScissorBox=0x0C10,
+///  
+ColorClearValue=0x0C22,
+///  
+ColorWritemask=0x0C23,
+///  
+UnpackAlignment=0x0CF5,
+///  
+PackAlignment=0x0D05,
+///  
+MaxTextureSize=0x0D33,
+///  
+MaxViewportDims=0x0D3A,
+///  
+SubpixelBits=0x0D50,
+///  
+RedBits=0x0D52,
+///  
+GreenBits=0x0D53,
+///  
+BlueBits=0x0D54,
+///  
+AlphaBits=0x0D55,
+///  
+DepthBits=0x0D56,
+///  
+StencilBits=0x0D57,
+///  
+PolygonOffsetUnits=0x2A00,
+///  
+PolygonOffsetFactor=0x8038,
+///  
+TextureBinding2d=0x8069,
+///  
+SampleBuffers=0x80A8,
+///  
+Samples=0x80A9,
+///  
+SampleCoverageValue=0x80AA,
+///  
+SampleCoverageInvert=0x80AB,
+///  
+CompressedTextureFormats=0x86A3,
+///  
+Vendor=0x1F00,
+///  
+Renderer=0x1F01,
+///  
+Version=0x1F02,
+///  
+ImplementationColorReadType=0x8B9A,
+///  
+ImplementationColorReadFormat=0x8B9B,
+///  
+BrowserDefaultWebgl=0x9244,
+/// undefined
+Buffers=undefined,
+/// undefined
+Constants passed to webglrenderingcontext.bufferdata(), webglrenderingcontext.buffersubdata(), webglrenderingcontext.bindbuffer(), or webglrenderingcontext.getbufferparameter().=undefined,
+/// undefined
+=undefined,
+/// Description
+Constant name=Value,
+/// Passed to bufferData as a hint about whether the contents of the buffer are likely to be used often and not change often.
+StaticDraw=0x88E4,
+/// Passed to bufferData as a hint about whether the contents of the buffer are likely to not be used often.
+StreamDraw=0x88E0,
+/// Passed to bufferData as a hint about whether the contents of the buffer are likely to be used often and change often.
+DynamicDraw=0x88E8,
+/// Passed to bindBuffer or bufferData to specify the type of buffer being used.
+ArrayBuffer=0x8892,
+/// Passed to bindBuffer or bufferData to specify the type of buffer being used.
+ElementArrayBuffer=0x8893,
+/// Passed to getBufferParameter to get a buffer's size.
+BufferSize=0x8764,
+/// Passed to getBufferParameter to get the hint for the buffer passed in when it was created.
+BufferUsage=0x8765,
+/// undefined
+Vertex attributes=undefined,
+/// undefined
+Constants passed to webglrenderingcontext.getvertexattrib().=undefined,
+/// undefined
+=undefined,
+/// Description
+Constant name=Value,
+/// Passed to getVertexAttrib to read back the current vertex attribute.
+CurrentVertexAttrib=0x8626,
+///  
+VertexAttribArrayEnabled=0x8622,
+///  
+VertexAttribArraySize=0x8623,
+///  
+VertexAttribArrayStride=0x8624,
+///  
+VertexAttribArrayType=0x8625,
+///  
+VertexAttribArrayNormalized=0x886A,
+///  
+VertexAttribArrayPointer=0x8645,
+///  
+VertexAttribArrayBufferBinding=0x889F,
+/// undefined
+Culling=undefined,
+/// undefined
+Constants passed to webglrenderingcontext.cullface().=undefined,
+/// undefined
+=undefined,
+/// Description
+Constant name=Value,
+/// Passed to enable/disable to turn on/off culling. Can also be used with getParameter to find the current culling method.
+CullFace=0x0B44,
+/// Passed to cullFace to specify that only front faces should be drawn.
+Front=0x0404,
+/// Passed to cullFace to specify that only back faces should be drawn.
+Back=0x0405,
+/// Passed to cullFace to specify that front and back faces should be drawn.
+FrontAndBack=0x0408,
+/// undefined
+Enabling and disabling=undefined,
+/// undefined
+Constants passed to webglrenderingcontext.enable() or webglrenderingcontext.disable().=undefined,
+/// undefined
+=undefined,
+/// Description
+Constant name=Value,
+/// Passed to enable/disable to turn on/off blending. Can also be used with getParameter to find the current blending method.
+Blend=0x0BE2,
+/// Passed to enable/disable to turn on/off the depth test. Can also be used with getParameter to query the depth test.
+DepthTest=0x0B71,
+/// Passed to enable/disable to turn on/off dithering. Can also be used with getParameter to find the current dithering method.
+Dither=0x0BD0,
+/// Passed to enable/disable to turn on/off the polygon offset. Useful for rendering hidden-line images, decals, and or solids with highlighted edges. Can also be used with getParameter to query the scissor test.
+PolygonOffsetFill=0x8037,
+/// Passed to enable/disable to turn on/off the alpha to coverage. Used in multi-sampling alpha channels.
+SampleAlphaToCoverage=0x809E,
+/// Passed to enable/disable to turn on/off the sample coverage. Used in multi-sampling.
+SampleCoverage=0x80A0,
+/// Passed to enable/disable to turn on/off the scissor test. Can also be used with getParameter to query the scissor test.
+ScissorTest=0x0C11,
+/// Passed to enable/disable to turn on/off the stencil test. Can also be used with getParameter to query the stencil test.
+StencilTest=0x0B90,
+/// undefined
+Errors=undefined,
+/// undefined
+Constants returned from webglrenderingcontext.geterror().=undefined,
+/// undefined
+=undefined,
+/// Description
+Constant name=Value,
+/// Returned from getError.
+NoError=0,
+/// Returned from getError.
+InvalidEnum=0x0500,
+/// Returned from getError.
+InvalidValue=0x0501,
+/// Returned from getError.
+InvalidOperation=0x0502,
+/// Returned from getError.
+OutOfMemory=0x0505,
+/// Returned from getError.
+ContextLostWebgl=0x9242,
+/// undefined
+Front face directions=undefined,
+/// undefined
+Constants passed to webglrenderingcontext.frontface().=undefined,
+/// undefined
+=undefined,
+/// Description
+Constant name=Value,
+/// Passed to frontFace to specify the front face of a polygon is drawn in the clockwise direction
+Cw=0x0900,
+/// Passed to frontFace to specify the front face of a polygon is drawn in the counter clockwise direction
+Ccw=0x0901,
+/// undefined
+Hints=undefined,
+/// undefined
+Constants passed to webglrenderingcontext.hint()=undefined,
+/// undefined
+=undefined,
+/// Description
+Constant name=Value,
+/// There is no preference for this behavior.
+DontCare=0x1100,
+/// The most efficient behavior should be used.
+Fastest=0x1101,
+/// The most correct or the highest quality option should be used.
+Nicest=0x1102,
+/// Hint for the quality of filtering when generating mipmap images with WebGLRenderingContext.generateMipmap().
+GenerateMipmapHint=0x8192,
+/// undefined
+Data types=undefined,
+/// Description
+Constant name=Value,
+///  
+Byte=0x1400,
+///  
+UnsignedByte=0x1401,
+///  
+Short=0x1402,
+///  
+UnsignedShort=0x1403,
+///  
+Int=0x1404,
+///  
+UnsignedInt=0x1405,
+///  
+Float=0x1406,
+/// undefined
+Pixel formats=undefined,
+/// Description
+Constant name=Value,
+///  
+DepthComponent=0x1902,
+///  
+Alpha=0x1906,
+///  
+Rgb=0x1907,
+///  
+Rgba=0x1908,
+///  
+Luminance=0x1909,
+///  
+LuminanceAlpha=0x190A,
+/// undefined
+Pixel types=undefined,
+/// Description
+Constant name=Value,
+///  
+UnsignedByte=0x1401,
+///  
+UnsignedShort4444=0x8033,
+///  
+UnsignedShort5551=0x8034,
+///  
+UnsignedShort565=0x8363,
+/// undefined
+Shaders=undefined,
+/// undefined
+Constants passed to webglrenderingcontext.createshader() or webglrenderingcontext.getshaderparameter()=undefined,
+/// undefined
+=undefined,
+/// Description
+Constant name=Value,
+/// Passed to createShader to define a fragment shader.
+FragmentShader=0x8B30,
+/// Passed to createShader to define a vertex shader
+VertexShader=0x8B31,
+/// Passed to getShaderParamter to get the status of the compilation. Returns false if the shader was not compiled. You can then query getShaderInfoLog to find the exact error
+CompileStatus=0x8B81,
+/// Passed to getShaderParamter to determine if a shader was deleted via deleteShader. Returns true if it was, false otherwise.
+DeleteStatus=0x8B80,
+/// Passed to getProgramParameter after calling linkProgram to determine if a program was linked correctly. Returns false if there were errors. Use getProgramInfoLog to find the exact error.
+LinkStatus=0x8B82,
+/// Passed to getProgramParameter after calling validateProgram to determine if it is valid. Returns false if errors were found.
+ValidateStatus=0x8B83,
+/// Passed to getProgramParameter after calling attachShader to determine if the shader was attached correctly. Returns false if errors occurred.
+AttachedShaders=0x8B85,
+/// Passed to getProgramParameter to get the number of attributes active in a program.
+ActiveAttributes=0x8B89,
+/// Passed to getProgramParamter to get the number of uniforms active in a program.
+ActiveUniforms=0x8B86,
+/// The maximum number of entries possible in the vertex attribute list.
+MaxVertexAttribs=0x8869,
+///  
+MaxVertexUniformVectors=0x8DFB,
+///  
+MaxVaryingVectors=0x8DFC,
+///  
+MaxCombinedTextureImageUnits=0x8B4D,
+///  
+MaxVertexTextureImageUnits=0x8B4C,
+/// Implementation dependent number of maximum texture units. At least 8.
+MaxTextureImageUnits=0x8872,
+///  
+MaxFragmentUniformVectors=0x8DFD,
+///  
+ShaderType=0x8B4F,
+///  
+ShadingLanguageVersion=0x8B8C,
+///  
+CurrentProgram=0x8B8D,
+/// undefined
+Depth or stencil tests=undefined,
+/// undefined
+Constants passed to webglrenderingcontext.depthfunc() or webglrenderingcontext.stencilfunc().=undefined,
+/// undefined
+=undefined,
+/// Description
+Constant name=Value,
+/// Passed to depthFunction or stencilFunction to specify depth or stencil tests will never pass. i.e. Nothing will be drawn.
+Never=0x0200,
+/// Passed to depthFunction or stencilFunction to specify depth or stencil tests will always pass. i.e. Pixels will be drawn in the order they are drawn.
+Always=0x0207,
+/// Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is less than the stored value.
+Less=0x0201,
+/// Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is equals to the stored value.
+Equal=0x0202,
+/// Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is less than or equal to the stored value.
+Lequal=0x0203,
+/// Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is greater than the stored value.
+Greater=0x0204,
+/// Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is greater than or equal to the stored value.
+Gequal=0x0206,
+/// Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is not equal to the stored value.
+Notequal=0x0205,
+/// undefined
+Stencil actions=undefined,
+/// undefined
+Constants passed to webglrenderingcontext.stencilop().=undefined,
+/// undefined
+=undefined,
+/// Description
+Constant name=Value,
+///  
+Keep=0x1E00,
+///  
+Replace=0x1E01,
+///  
+Incr=0x1E02,
+///  
+Decr=0x1E03,
+///  
+Invert=0x150A,
+///  
+IncrWrap=0x8507,
+///  
+DecrWrap=0x8508,
+/// undefined
+Textures=undefined,
+/// undefined
+Constants passed to webglrenderingcontext.texparameteri(), webglrenderingcontext.texparameterf(), webglrenderingcontext.bindtexture(), webglrenderingcontext.teximage2d(), and others.=undefined,
+/// undefined
+=undefined,
+/// Description
+Constant name=Value,
+
+
+///  
+Texture=0x1702,
+///  
+
+/// A texture unit.
+Texture0 - 31=0x84C0 - 0x84DF,
+/// The current active texture unit.
+ActiveTexture=0x84E0,
+
+
+
+
+
+/// undefined
+Uniform types=undefined,
+/// Description
+Constant name=Value,
+///  
+FloatVec2=0x8B50,
+///  
+FloatVec3=0x8B51,
+///  
+FloatVec4=0x8B52,
+///  
+IntVec2=0x8B53,
+///  
+IntVec3=0x8B54,
+///  
+IntVec4=0x8B55,
+///  
+Bool=0x8B56,
+///  
+BoolVec2=0x8B57,
+///  
+BoolVec3=0x8B58,
+///  
+BoolVec4=0x8B59,
+///  
+FloatMat2=0x8B5A,
+///  
+FloatMat3=0x8B5B,
+///  
+FloatMat4=0x8B5C,
+///  
+Sampler2d=0x8B5E,
+///  
+SamplerCube=0x8B60,
+/// undefined
+Shader precision-specified types=undefined,
+/// Description
+Constant name=Value,
+///  
+LowFloat=0x8DF0,
+///  
+MediumFloat=0x8DF1,
+///  
+HighFloat=0x8DF2,
+///  
+LowInt=0x8DF3,
+///  
+MediumInt=0x8DF4,
+///  
+HighInt=0x8DF5,
+/// undefined
+Framebuffers and renderbuffers=undefined,
+/// Description
+Constant name=Value,
+///  
+Framebuffer=0x8D40,
+///  
+Renderbuffer=0x8D41,
+///  
+Rgba4=0x8056,
+///  
+Rgb5A1=0x8057,
+///  
+Rgb565=0x8D62,
+///  
+DepthComponent16=0x81A5,
+///  
+StencilIndex=0x1901,
+///  
+StencilIndex8=0x8D48,
+///  
+DepthStencil=0x84F9,
+///  
+RenderbufferWidth=0x8D42,
+///  
+RenderbufferHeight=0x8D43,
+///  
+RenderbufferInternalFormat=0x8D44,
+///  
+RenderbufferRedSize=0x8D50,
+///  
+RenderbufferGreenSize=0x8D51,
+///  
+RenderbufferBlueSize=0x8D52,
+///  
+RenderbufferAlphaSize=0x8D53,
+///  
+RenderbufferDepthSize=0x8D54,
+///  
+RenderbufferStencilSize=0x8D55,
+///  
+FramebufferAttachmentObjectType=0x8CD0,
+///  
+FramebufferAttachmentObjectName=0x8CD1,
+///  
+FramebufferAttachmentTextureLevel=0x8CD2,
+///  
+FramebufferAttachmentTextureCubeMapFace=0x8CD3,
+///  
+ColorAttachment0=0x8CE0,
+///  
+DepthAttachment=0x8D00,
+///  
+StencilAttachment=0x8D20,
+///  
+DepthStencilAttachment=0x821A,
+///  
+None=0,
+///  
+FramebufferComplete=0x8CD5,
+///  
+FramebufferIncompleteAttachment=0x8CD6,
+///  
+FramebufferIncompleteMissingAttachment=0x8CD7,
+///  
+FramebufferIncompleteDimensions=0x8CD9,
+///  
+FramebufferUnsupported=0x8CDD,
+///  
+FramebufferBinding=0x8CA6,
+///  
+RenderbufferBinding=0x8CA7,
+///  
+MaxRenderbufferSize=0x84E8,
+///  
+InvalidFramebufferOperation=0x0506,
+/// undefined
+Pixel storage modes=undefined,
+/// undefined
+Constants passed to webglrenderingcontext.pixelstorei().=undefined,
+/// undefined
+=undefined,
+/// Description
+Constant name=Value,
+///  
+UnpackFlipYWebgl=0x9240,
+///  
+UnpackPremultiplyAlphaWebgl=0x9241,
+///  
+UnpackColorspaceConversionWebgl=0x9243,
+/// undefined
+Additional constants defined webgl 2=undefined,
+/// undefined
+These constants are defined on the webgl2renderingcontext interface. all webgl 1 constants are also available in a webgl 2 context.=undefined,
+/// undefined
+=undefined,
+/// undefined
+Getting gl parameter information=undefined,
+/// undefined
+Constants passed to webglrenderingcontext.getparameter() to specify what information to return.=undefined,
+/// undefined
+=undefined,
+/// Description
+Constant name=Value,
+///  
+ReadBuffer=0x0C02,
+///  
+UnpackRowLength=0x0CF2,
+///  
+UnpackSkipRows=0x0CF3,
+///  
+UnpackSkipPixels=0x0CF4,
+///  
+PackRowLength=0x0D02,
+///  
+PackSkipRows=0x0D03,
+///  
+PackSkipPixels=0x0D04,
+///  
+TextureBinding3d=0x806A,
+///  
+UnpackSkipImages=0x806D,
+///  
+UnpackImageHeight=0x806E,
+///  
+Max3dTextureSize=0x8073,
+///  
+MaxElementsVertices=0x80E8,
+///  
+MaxElementsIndices=0x80E9,
+///  
+MaxTextureLodBias=0x84FD,
+///  
+MaxFragmentUniformComponents=0x8B49,
+///  
+MaxVertexUniformComponents=0x8B4A,
+///  
+MaxArrayTextureLayers=0x88FF,
+///  
+MinProgramTexelOffset=0x8904,
+///  
+MaxProgramTexelOffset=0x8905,
+///  
+MaxVaryingComponents=0x8B4B,
+///  
+FragmentShaderDerivativeHint=0x8B8B,
+///  
+RasterizerDiscard=0x8C89,
+///  
+VertexArrayBinding=0x85B5,
+///  
+MaxVertexOutputComponents=0x9122,
+///  
+MaxFragmentInputComponents=0x9125,
+///  
+MaxServerWaitTimeout=0x9111,
+///  
+MaxElementIndex=0x8D6B,
+/// undefined
+Textures=undefined,
+/// undefined
+Constants passed to webglrenderingcontext.texparameteri(), webglrenderingcontext.texparameterf(), webglrenderingcontext.bindtexture(), webglrenderingcontext.teximage2d(), and others.=undefined,
+/// undefined
+=undefined,
+/// Description
+Constant name=Value,
+///  
+Red=0x1903,
+///  
+Rgb8=0x8051,
+///  
+Rgba8=0x8058,
+///  
+Rgb10A2=0x8059,
+///  
+Texture3d=0x806F,
+///  
+TextureWrapR=0x8072,
+///  
+TextureMinLod=0x813A,
+///  
+TextureMaxLod=0x813B,
+///  
+TextureBaseLevel=0x813C,
+///  
+TextureMaxLevel=0x813D,
+///  
+TextureCompareMode=0x884C,
+///  
+TextureCompareFunc=0x884D,
+///  
+Srgb=0x8C40,
+///  
+Srgb8=0x8C41,
+///  
+Srgb8Alpha8=0x8C43,
+///  
+CompareRefToTexture=0x884E,
+///  
+Rgba32f=0x8814,
+///  
+Rgb32f=0x8815,
+///  
+Rgba16f=0x881A,
+///  
+Rgb16f=0x881B,
+///  
+Texture2dArray=0x8C1A,
+///  
+TextureBinding2dArray=0x8C1D,
+///  
+R11fG11fB10f=0x8C3A,
+///  
+Rgb9E5=0x8C3D,
+///  
+Rgba32ui=0x8D70,
+///  
+Rgb32ui=0x8D71,
+///  
+Rgba16ui=0x8D76,
+///  
+Rgb16ui=0x8D77,
+///  
+Rgba8ui=0x8D7C,
+///  
+Rgb8ui=0x8D7D,
+///  
+Rgba32i=0x8D82,
+///  
+Rgb32i=0x8D83,
+///  
+Rgba16i=0x8D88,
+///  
+Rgb16i=0x8D89,
+///  
+Rgba8i=0x8D8E,
+///  
+Rgb8i=0x8D8F,
+///  
+RedInteger=0x8D94,
+///  
+RgbInteger=0x8D98,
+///  
+RgbaInteger=0x8D99,
+///  
+R8=0x8229,
+///  
+Rg8=0x822B,
+///  
+R16f=0x822D,
+///  
+R32f=0x822E,
+///  
+Rg16f=0x822F,
+///  
+Rg32f=0x8230,
+///  
+R8i=0x8231,
+///  
+R8ui=0x8232,
+///  
+R16i=0x8233,
+///  
+R16ui=0x8234,
+///  
+R32i=0x8235,
+///  
+R32ui=0x8236,
+///  
+Rg8i=0x8237,
+///  
+Rg8ui=0x8238,
+///  
+Rg16i=0x8239,
+///  
+Rg16ui=0x823A,
+///  
+Rg32i=0x823B,
+///  
+Rg32ui=0x823C,
+///  
+R8Snorm=0x8F94,
+///  
+Rg8Snorm=0x8F95,
+///  
+Rgb8Snorm=0x8F96,
+///  
+Rgba8Snorm=0x8F97,
+///  
+Rgb10A2ui=0x906F,
+///  
+TextureImmutableFormat=0x912F,
+///  
+TextureImmutableLevels=0x82DF,
+/// undefined
+Pixel types=undefined,
+/// Description
+Constant name=Value,
+///  
+UnsignedInt2101010Rev=0x8368,
+///  
+UnsignedInt10f11f11fRev=0x8C3B,
+///  
+UnsignedInt5999Rev=0x8C3E,
+///  
+Float32UnsignedInt248Rev=0x8DAD,
+///  
+UnsignedInt248=0x84FA,
+///  
+HalfFloat=0x140B,
+///  
+Rg=0x8227,
+///  
+RgInteger=0x8228,
+///  
+Int2101010Rev=0x8D9F,
+/// undefined
+Queries=undefined,
+/// Description
+Constant name=Value,
+///  
+CurrentQuery=0x8865,
+///  
+QueryResult=0x8866,
+///  
+QueryResultAvailable=0x8867,
+///  
+AnySamplesPassed=0x8C2F,
+///  
+AnySamplesPassedConservative=0x8D6A,
+/// undefined
+Draw buffers=undefined,
+/// Description
+Constant name=Value,
+///  
+MaxDrawBuffers=0x8824,
+///  
+DrawBuffer0=0x8825,
+///  
+DrawBuffer1=0x8826,
+///  
+DrawBuffer2=0x8827,
+///  
+DrawBuffer3=0x8828,
+///  
+DrawBuffer4=0x8829,
+///  
+DrawBuffer5=0x882A,
+///  
+DrawBuffer6=0x882B,
+///  
+DrawBuffer7=0x882C,
+///  
+DrawBuffer8=0x882D,
+///  
+DrawBuffer9=0x882E,
+///  
+DrawBuffer10=0x882F,
+///  
+DrawBuffer11=0x8830,
+///  
+DrawBuffer12=0x8831,
+///  
+DrawBuffer13=0x8832,
+///  
+DrawBuffer14=0x8833,
+///  
+DrawBuffer15=0x8834,
+///  
+MaxColorAttachments=0x8CDF,
+///  
+ColorAttachment1=0x8CE1,
+///  
+ColorAttachment2=0x8CE2,
+///  
+ColorAttachment3=0x8CE3,
+///  
+ColorAttachment4=0x8CE4,
+///  
+ColorAttachment5=0x8CE5,
+///  
+ColorAttachment6=0x8CE6,
+///  
+ColorAttachment7=0x8CE7,
+///  
+ColorAttachment8=0x8CE8,
+///  
+ColorAttachment9=0x8CE9,
+///  
+ColorAttachment10=0x8CEA,
+///  
+ColorAttachment11=0x8CEB,
+///  
+ColorAttachment12=0x8CEC,
+///  
+ColorAttachment13=0x8CED,
+///  
+ColorAttachment14=0x8CEE,
+///  
+ColorAttachment15=0x8CEF,
+/// undefined
+Samplers=undefined,
+/// Description
+Constant name=Value,
+///  
+Sampler3d=0x8B5F,
+///  
+Sampler2dShadow=0x8B62,
+///  
+Sampler2dArray=0x8DC1,
+///  
+Sampler2dArrayShadow=0x8DC4,
+///  
+SamplerCubeShadow=0x8DC5,
+///  
+IntSampler2d=0x8DCA,
+///  
+IntSampler3d=0x8DCB,
+///  
+IntSamplerCube=0x8DCC,
+///  
+IntSampler2dArray=0x8DCF,
+///  
+UnsignedIntSampler2d=0x8DD2,
+///  
+UnsignedIntSampler3d=0x8DD3,
+///  
+UnsignedIntSamplerCube=0x8DD4,
+///  
+UnsignedIntSampler2dArray=0x8DD7,
+///  
+MaxSamples=0x8D57,
+///  
+SamplerBinding=0x8919,
+/// undefined
+Buffers=undefined,
+/// Description
+Constant name=Value,
+///  
+PixelPackBuffer=0x88EB,
+///  
+PixelUnpackBuffer=0x88EC,
+///  
+PixelPackBufferBinding=0x88ED,
+///  
+PixelUnpackBufferBinding=0x88EF,
+///  
+CopyReadBuffer=0x8F36,
+///  
+CopyWriteBuffer=0x8F37,
+///  
+CopyReadBufferBinding=0x8F36,
+///  
+CopyWriteBufferBinding=0x8F37,
+/// undefined
+Data types=undefined,
+/// Description
+Constant name=Value,
+///  
+FloatMat2x3=0x8B65,
+///  
+FloatMat2x4=0x8B66,
+///  
+FloatMat3x2=0x8B67,
+///  
+FloatMat3x4=0x8B68,
+///  
+FloatMat4x2=0x8B69,
+///  
+FloatMat4x3=0x8B6A,
+///  
+UnsignedIntVec2=0x8DC6,
+///  
+UnsignedIntVec3=0x8DC7,
+///  
+UnsignedIntVec4=0x8DC8,
+///  
+UnsignedNormalized=0x8C17,
+///  
+SignedNormalized=0x8F9C,
+/// undefined
+Vertex attributes=undefined,
+/// Description
+Constant name=Value,
+///  
+VertexAttribArrayInteger=0x88FD,
+///  
+VertexAttribArrayDivisor=0x88FE,
+/// undefined
+Transform feedback=undefined,
+/// Description
+Constant name=Value,
+///  
+TransformFeedbackBufferMode=0x8C7F,
+///  
+MaxTransformFeedbackSeparateComponents=0x8C80,
+///  
+TransformFeedbackVaryings=0x8C83,
+///  
+TransformFeedbackBufferStart=0x8C84,
+///  
+TransformFeedbackBufferSize=0x8C85,
+///  
+TransformFeedbackPrimitivesWritten=0x8C88,
+///  
+MaxTransformFeedbackInterleavedComponents=0x8C8A,
+///  
+MaxTransformFeedbackSeparateAttribs=0x8C8B,
+///  
+InterleavedAttribs=0x8C8C,
+///  
+SeparateAttribs=0x8C8D,
+///  
+TransformFeedbackBuffer=0x8C8E,
+///  
+TransformFeedbackBufferBinding=0x8C8F,
+///  
+TransformFeedback=0x8E22,
+///  
+TransformFeedbackPaused=0x8E23,
+///  
+TransformFeedbackActive=0x8E24,
+///  
+TransformFeedbackBinding=0x8E25,
+/// undefined
+Framebuffers and renderbuffers=undefined,
+/// Description
+Constant name=Value,
+///  
+FramebufferAttachmentColorEncoding=0x8210,
+///  
+FramebufferAttachmentComponentType=0x8211,
+///  
+FramebufferAttachmentRedSize=0x8212,
+///  
+FramebufferAttachmentGreenSize=0x8213,
+///  
+FramebufferAttachmentBlueSize=0x8214,
+///  
+FramebufferAttachmentAlphaSize=0x8215,
+///  
+FramebufferAttachmentDepthSize=0x8216,
+///  
+FramebufferAttachmentStencilSize=0x8217,
+///  
+FramebufferDefault=0x8218,
+///  
+DepthStencilAttachment=0x821A,
+///  
+DepthStencil=0x84F9,
+///  
+Depth24Stencil8=0x88F0,
+///  
+DrawFramebufferBinding=0x8CA6,
+///  
+ReadFramebuffer=0x8CA8,
+///  
+DrawFramebuffer=0x8CA9,
+///  
+ReadFramebufferBinding=0x8CAA,
+///  
+RenderbufferSamples=0x8CAB,
+///  
+FramebufferAttachmentTextureLayer=0x8CD4,
+///  
+FramebufferIncompleteMultisample=0x8D56,
+/// undefined
+Uniforms=undefined,
+/// Description
+Constant name=Value,
+///  
+UniformBuffer=0x8A11,
+///  
+UniformBufferBinding=0x8A28,
+///  
+UniformBufferStart=0x8A29,
+///  
+UniformBufferSize=0x8A2A,
+///  
+MaxVertexUniformBlocks=0x8A2B,
+///  
+MaxFragmentUniformBlocks=0x8A2D,
+///  
+MaxCombinedUniformBlocks=0x8A2E,
+///  
+MaxUniformBufferBindings=0x8A2F,
+///  
+MaxUniformBlockSize=0x8A30,
+///  
+MaxCombinedVertexUniformComponents=0x8A31,
+///  
+MaxCombinedFragmentUniformComponents=0x8A33,
+///  
+UniformBufferOffsetAlignment=0x8A34,
+///  
+ActiveUniformBlocks=0x8A36,
+///  
+UniformType=0x8A37,
+///  
+UniformSize=0x8A38,
+///  
+UniformBlockIndex=0x8A3A,
+///  
+UniformOffset=0x8A3B,
+///  
+UniformArrayStride=0x8A3C,
+///  
+UniformMatrixStride=0x8A3D,
+///  
+UniformIsRowMajor=0x8A3E,
+///  
+UniformBlockBinding=0x8A3F,
+///  
+UniformBlockDataSize=0x8A40,
+///  
+UniformBlockActiveUniforms=0x8A42,
+///  
+UniformBlockActiveUniformIndices=0x8A43,
+///  
+UniformBlockReferencedByVertexShader=0x8A44,
+///  
+UniformBlockReferencedByFragmentShader=0x8A46,
+/// undefined
+Sync objects=undefined,
+/// Description
+Constant name=Value,
+///  
+ObjectType=0x9112,
+///  
+SyncCondition=0x9113,
+///  
+SyncStatus=0x9114,
+///  
+SyncFlags=0x9115,
+///  
+SyncFence=0x9116,
+///  
+SyncGpuCommandsComplete=0x9117,
+///  
+Unsignaled=0x9118,
+///  
+Signaled=0x9119,
+///  
+AlreadySignaled=0x911A,
+///  
+TimeoutExpired=0x911B,
+///  
+ConditionSatisfied=0x911C,
+///  
+WaitFailed=0x911D,
+///  
+SyncFlushCommandsBit=0x00000001,
+/// undefined
+Miscellaneous constants=undefined,
+/// Description
+Constant name=Value,
+///  
+Color=0x1800,
+///  
+Depth=0x1801,
+///  
+Stencil=0x1802,
+///  
+Min=0x8007,
+///  
+Max=0x8008,
+///  
+DepthComponent24=0x81A6,
+///  
+StreamRead=0x88E1,
+///  
+StreamCopy=0x88E2,
+///  
+StaticRead=0x88E5,
+///  
+StaticCopy=0x88E6,
+///  
+DynamicRead=0x88E9,
+///  
+DynamicCopy=0x88EA,
+///  
+DepthComponent32f=0x8CAC,
+///  
+Depth32fStencil8=0x8CAD,
+///  
+InvalidIndex=0xFFFFFFFF,
+///  
+TimeoutIgnored=-1,
+///  
+MaxClientWaitTimeoutWebgl=0x9247,
+/// undefined
+Constants defined in webgl extensions=undefined,
+/// undefined
+AngleInstancedArrays=undefined,
+/// Description
+Constant name=Value,
+/// Describes the frequency divisor used for instanced rendering.
+VertexAttribArrayDivisorAngle=0x88FE,
+/// undefined
+WebglDebugRendererInfo=undefined,
+/// Description
+Constant name=Value,
+/// Passed to getParameter to get the vendor string of the graphics driver.
+UnmaskedVendorWebgl=0x9245,
+/// Passed to getParameter to get the renderer string of the graphics driver.
+UnmaskedRendererWebgl=0x9246,
+/// undefined
+ExtTextureFilterAnisotropic=undefined,
+/// Description
+Constant name=Value,
+/// Returns the maximum available anisotropy.
+MaxTextureMaxAnisotropyExt=0x84FF,
+/// Passed to texParameter to set the desired maximum anisotropy for a texture.
+TextureMaxAnisotropyExt=0x84FE,
+/// undefined
+WebglCompressedTextureS3tc=undefined,
+/// Description
+Constant name=Value,
+/// A DXT1-compressed image in an RGB image format.
+CompressedRgbS3tcDxt1Ext=0x83F0,
+/// A DXT1-compressed image in an RGB image format with a simple on/off alpha value.
+CompressedRgbaS3tcDxt1Ext=0x83F1,
+/// A DXT3-compressed image in an RGBA image format. Compared to a 32-bit RGBA texture, it offers 4:1 compression.
+CompressedRgbaS3tcDxt3Ext=0x83F2,
+/// A DXT5-compressed image in an RGBA image format. It also provides a 4:1 compression, but differs to the DXT3 compression in how the alpha compression is done.
+CompressedRgbaS3tcDxt5Ext=0x83F3,
+/// undefined
+WebglCompressedTextureEtc=undefined,
+/// Description
+Constant name=Value,
+/// One-channel (red) unsigned format compression.
+CompressedR11Eac=0x9270,
+/// One-channel (red) signed format compression.
+CompressedSignedR11Eac=0x9271,
+/// Two-channel (red and green) unsigned format compression.
+CompressedRg11Eac=0x9272,
+/// Two-channel (red and green) signed format compression.
+CompressedSignedRg11Eac=0x9273,
+/// Compresses RBG8 data with no alpha channel.
+CompressedRgb8Etc2=0x9274,
+/// Compresses RGBA8 data. The RGB part is encoded the same as RGB_ETC2, but the alpha part is encoded separately.
+CompressedRgba8Etc2Eac=0x9275,
+/// Compresses sRBG8 data with no alpha channel.
+CompressedSrgb8Etc2=0x9276,
+/// Compresses sRGBA8 data. The sRGB part is encoded the same as SRGB_ETC2, but the alpha part is encoded separately.
+CompressedSrgb8Alpha8Etc2Eac=0x9277,
+/// Similar to RGB8_ETC, but with ability to punch through the alpha channel, which means to make it completely opaque or transparent.
+CompressedRgb8PunchthroughAlpha1Etc2=0x9278,
+/// Similar to SRGB8_ETC, but with ability to punch through the alpha channel, which means to make it completely opaque or transparent.
+CompressedSrgb8PunchthroughAlpha1Etc2=0x9279,
+/// undefined
+WebglCompressedTexturePvrtc=undefined,
+/// Description
+Constant name=Value,
+/// RGB compression in 4-bit mode. One block for each 4×4 pixels.
+CompressedRgbPvrtc4bppv1Img=0x8C00,
+/// RGBA compression in 4-bit mode. One block for each 4×4 pixels.
+CompressedRgbaPvrtc4bppv1Img=0x8C02,
+/// RGB compression in 2-bit mode. One block for each 8×4 pixels.
+CompressedRgbPvrtc2bppv1Img=0x8C01,
+/// RGBA compression in 2-bit mode. One block for each 8×4 pixe
+CompressedRgbaPvrtc2bppv1Img=0x8C03,
+/// undefined
+WebglCompressedTextureEtc1=undefined,
+/// Description
+Constant name=Value,
+/// Compresses 24-bit RGB data with no alpha channel.
+CompressedRgbEtc1Webgl=0x8D64,
+/// undefined
+WebglCompressedTextureAtc=undefined,
+/// Description
+Constant name=Value,
+/// Compresses RGB textures with no alpha channel.
+CompressedRgbAtcWebgl=0x8C92,
+/// Compresses RGBA textures using explicit alpha encoding (useful when alpha transitions are sharp).
+CompressedRgbaAtcExplicitAlphaWebgl=0x8C92,
+/// Compresses RGBA textures using interpolated alpha encoding (useful when alpha transitions are gradient).
+CompressedRgbaAtcInterpolatedAlphaWebgl=0x87EE,
+/// undefined
+WebglDepthTexture=undefined,
+/// Description
+Constant name=Value,
+/// Unsigned integer type for 24-bit depth texture data.
+UnsignedInt248Webgl=0x84FA,
+/// undefined
+OesTextureHalfFloat=undefined,
+/// Description
+Constant name=Value,
+/// Half floating-point type (16-bit).
+HalfFloatOes=0x8D61,
+/// undefined
+WebglColorBufferFloat=undefined,
+/// Description
+Constant name=Value,
+/// RGBA 32-bit floating-point color-renderable format.
+Rgba32fExt=0x8814,
+/// RGB 32-bit floating-point color-renderable format.
+Rgb32fExt=0x8815,
+///  
+FramebufferAttachmentComponentTypeExt=0x8211,
+///  
+UnsignedNormalizedExt=0x8C17,
+/// undefined
+ExtBlendMinmax=undefined,
+/// Description
+Constant name=Value,
+/// Produces the minimum color components of the source and destination colors.
+MinExt=0x8007,
+/// Produces the maximum color components of the source and destination colors.
+MaxExt=0x8008,
+/// undefined
+ExtSrgb=undefined,
+/// Description
+Constant name=Value,
+/// Unsized sRGB format that leaves the precision up to the driver.
+SrgbExt=0x8C40,
+/// Unsized sRGB format with unsized alpha component.
+SrgbAlphaExt=0x8C42,
+/// Sized (8-bit) sRGB and alpha formats.
+Srgb8Alpha8Ext=0x8C43,
+/// Returns the framebuffer color encoding.
+FramebufferAttachmentColorEncodingExt=0x8210,
+/// undefined
+OesStandardDerivatives=undefined,
+/// Description
+Constant name=Value,
+/// Indicates the accuracy of the derivative calculation for the GLSL built-in functions: dFdx, dFdy, and fwidth.
+FragmentShaderDerivativeHintOes=0x8B8B,
+/// undefined
+WebglDrawBuffers=undefined,
+/// Description
+Constant name=Value,
+/// Framebuffer color attachment point
+ColorAttachment0Webgl=0x8CE0,
+/// Framebuffer color attachment point
+ColorAttachment1Webgl=0x8CE1,
+/// Framebuffer color attachment point
+ColorAttachment2Webgl=0x8CE2,
+/// Framebuffer color attachment point
+ColorAttachment3Webgl=0x8CE3,
+/// Framebuffer color attachment point
+ColorAttachment4Webgl=0x8CE4,
+/// Framebuffer color attachment point
+ColorAttachment5Webgl=0x8CE5,
+/// Framebuffer color attachment point
+ColorAttachment6Webgl=0x8CE6,
+/// Framebuffer color attachment point
+ColorAttachment7Webgl=0x8CE7,
+/// Framebuffer color attachment point
+ColorAttachment8Webgl=0x8CE8,
+/// Framebuffer color attachment point
+ColorAttachment9Webgl=0x8CE9,
+/// Framebuffer color attachment point
+ColorAttachment10Webgl=0x8CEA,
+/// Framebuffer color attachment point
+ColorAttachment11Webgl=0x8CEB,
+/// Framebuffer color attachment point
+ColorAttachment12Webgl=0x8CEC,
+/// Framebuffer color attachment point
+ColorAttachment13Webgl=0x8CED,
+/// Framebuffer color attachment point
+ColorAttachment14Webgl=0x8CEE,
+/// Framebuffer color attachment point
+ColorAttachment15Webgl=0x8CEF,
+/// Draw buffer
+DrawBuffer0Webgl=0x8825,
+/// Draw buffer
+DrawBuffer1Webgl=0x8826,
+/// Draw buffer
+DrawBuffer2Webgl=0x8827,
+/// Draw buffer
+DrawBuffer3Webgl=0x8828,
+/// Draw buffer
+DrawBuffer4Webgl=0x8829,
+/// Draw buffer
+DrawBuffer5Webgl=0x882A,
+/// Draw buffer
+DrawBuffer6Webgl=0x882B,
+/// Draw buffer
+DrawBuffer7Webgl=0x882C,
+/// Draw buffer
+DrawBuffer8Webgl=0x882D,
+/// Draw buffer
+DrawBuffer9Webgl=0x882E,
+/// Draw buffer
+DrawBuffer10Webgl=0x882F,
+/// Draw buffer
+DrawBuffer11Webgl=0x8830,
+/// Draw buffer
+DrawBuffer12Webgl=0x8831,
+/// Draw buffer
+DrawBuffer13Webgl=0x8832,
+/// Draw buffer
+DrawBuffer14Webgl=0x8833,
+/// Draw buffer
+DrawBuffer15Webgl=0x8834,
+/// Maximum number of framebuffer color attachment points
+MaxColorAttachmentsWebgl=0x8CDF,
+/// Maximum number of draw buffers
+MaxDrawBuffersWebgl=0x8824,
+/// undefined
+OesVertexArrayObject=undefined,
+/// Description
+Constant name=Value,
+/// The bound vertex array object (VAO).
+VertexArrayBindingOes=0x85B5,
+/// undefined
+ExtDisjointTimerQuery=undefined,
+/// Description
+Constant name=Value,
+/// The number of bits used to hold the query result for the given target.
+QueryCounterBitsExt=0x8864,
+/// The currently active query.
+CurrentQueryExt=0x8865,
+/// The query result.
+QueryResultExt=0x8866,
+/// A Boolean indicating whether or not a query result is available.
+QueryResultAvailableExt=0x8867,
+/// Elapsed time (in nanoseconds).
+TimeElapsedExt=0x88BF,
+/// The current time.
+TimestampExt=0x8E28,
+/// A Boolean indicating whether or not the GPU performed any disjoint operation.
+GpuDisjointExt=0x8FBB,
