@@ -719,3 +719,21 @@ pub enum UniformType {
     ///
     SamplerCube = 0x8B60,
 }
+
+
+
+///
+#[derive(Debug, Clone, Copy)]
+pub enum TextureCompression {
+    /// A DXT1-compressed image in an RGB image format.
+    RgbDxt1 = 0x83F0,
+    /// A DXT1-compressed image in an RGB image format with a simple on/off alpha value.
+    RgbaDxt1 = 0x83F1,
+    ///	A DXT3-compressed image in an RGBA image format.
+    /// Compared to a 32-bit RGBA texture, it offers 4:1 compression.
+    RgbaDxt3 = 0x83F2,
+    /// A DXT5-compressed image in an RGBA image format.
+    /// It also provides a 4:1 compression,
+    /// but differs to the DXT3 compression in how the alpha compression is done.
+    RgbaDxt5 = 0x83F3,
+}
