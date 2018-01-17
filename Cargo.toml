@@ -10,3 +10,5 @@ keywords = ["webgl","opengl"]
 license = "Apache-2.0"
 documentation = "https://docs.rs/glenum"
 [dependencies]
+serde = "*"
+serde_derive = "*"

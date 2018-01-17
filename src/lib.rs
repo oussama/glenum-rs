@@ -2,6 +2,19 @@
     Documentation taken from https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Constants
 */
 
+extern crate serde;
+#[macro_use]
+extern crate serde_derive;
+
+
+/// Constants passed to WebGLRenderingContext.vertexAttribPointer()
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
+pub enum AttributeSize {
+    One = 1,
+    Two = 2,
+    Three = 3,
+    Four = 4
+}
 
 /// Constants passed to WebGLRenderingContext.createShader()
 #[derive(Debug, Clone, Copy)]
@@ -80,7 +93,7 @@ pub enum BufferParameter {
     Usage = 0x8765,
 }
 
-#[derive(Debug,Clone, Copy)]
+#[derive(Debug,Clone, Copy, Serialize, Deserialize)]
 pub enum DataType {
     I8 = 0x1400,
     U8 = 0x1401,
@@ -517,6 +530,8 @@ pub enum TextureParameter {
     TextureWrapS = 0x2802,
     ///
     TextureWrapT = 0x2803,
+    ///
+    BorderColor = 0x1004
 }
 
 
@@ -566,7 +581,7 @@ pub enum TextureMinFilter {
 }
 
 /// WebGLRenderingContext.texParameter[fi]() "param" parameter
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy,PartialEq)]
 pub enum TextureWrap {
     ///
     Repeat = 0x2901,
@@ -664,7 +679,15 @@ pub enum PixelStorageMode {
     UnpackPremultiplyAlphaWebgl = 0x9241,
     ///
     UnpackColorspaceConversionWebgl = 0x9243,
+    /// Packing of pixel data into memory.
+    /// Can be 1, 2, 4, 8 defaults to 4
+    PackAlignment = 0x0D05,
+    /// Unpacking of pixel data from memory
+    /// Can be 1, 2, 4, 8 defaults to 4
+    UnpackAlignment = 0x0CF5,
 }
+
+
 
 
 ///
