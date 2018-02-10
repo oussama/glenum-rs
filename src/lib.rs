@@ -17,7 +17,7 @@ pub enum AttributeSize {
 }
 
 /// Constants passed to WebGLRenderingContext.createShader()
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum ShaderKind {
     /// Passed to createShader to define a fragment shader.
     Fragment = 0x8B30,
@@ -26,7 +26,7 @@ pub enum ShaderKind {
 }
 
 /// Constants passed to WebGLRenderingContext.createShader()
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum ShaderParameter {
     /// Passed to getShaderParamter to get the status of the compilation. Returns false if the shader was not compiled. You can then query getShaderInfoLog to find the exact error
     CompileStatus = 0x8B81,
@@ -69,13 +69,13 @@ pub enum ShaderParameter {
 
 
 /// Passed to bindBuffer or bufferData to specify the type of buffer being used.
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum BufferKind {
     Array = 0x8892,
     ElementArray = 0x8893,
 }
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum DrawMode {
     /// Passed to bufferData as a hint about whether the contents of the buffer are likely to be used often and not change often.
     Static = 0x88E4,
@@ -85,7 +85,7 @@ pub enum DrawMode {
     Stream = 0x88E0,
 }
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum BufferParameter {
     /// Passed to getBufferParameter to get a buffer's size.
     Size = 0x8764,
@@ -104,7 +104,7 @@ pub enum DataType {
     Float = 0x1406,
 }
 
-#[derive(Debug,Clone, Copy)]
+#[derive(Debug,Clone, Copy, Serialize, Deserialize)]
 pub enum Flag {
     /// Passed to enable/disable to turn on/off blending. Can also be used with getParameter to find the current blending method.
     Blend = 0x0BE2,
@@ -124,7 +124,7 @@ pub enum Flag {
     StencilTest = 0x0B90,
 }
 
-#[derive(Debug,Clone, Copy)]
+#[derive(Debug,Clone, Copy, Serialize, Deserialize)]
 pub enum BufferBit {
     /// Passed to clear to clear the current depth buffer.
     Depth = 0x00000100,
@@ -135,7 +135,7 @@ pub enum BufferBit {
 }
 
 /// Passed to drawElements or drawArrays to draw primitives.
-#[derive(Debug,Clone, Copy)]
+#[derive(Debug,Clone, Copy, Serialize, Deserialize)]
 pub enum Primitives {
     /// Passed to drawElements or drawArrays to draw single points.
     Points = 0x0000,
@@ -155,7 +155,7 @@ pub enum Primitives {
 
 
 /// Constants passed to WebGLRenderingContext.blendFunc() or WebGLRenderingContext.blendFuncSeparate() to specify the blending mode (for both, RBG and alpha, or separately).
-#[derive(Debug,Clone, Copy)]
+#[derive(Debug,Clone, Copy, Serialize, Deserialize)]
 pub enum BlendMode {
     /// Passed to blendFunc or blendFuncSeparate to turn off a component.
     Zero = 0,
@@ -192,7 +192,7 @@ pub enum BlendMode {
 /// Constants passed to WebGLRenderingContext.blendEquation()
 /// or WebGLRenderingContext.blendEquationSeparate() to control
 /// how the blending is calculated (for both, RBG and alpha, or separately).
-#[derive(Debug,Clone, Copy)]
+#[derive(Debug,Clone, Copy, Serialize, Deserialize)]
 pub enum BlendEquation {
     /// Passed to blendEquation or blendEquationSeparate to set an addition blend function.
     FuncAdd = 0x8006,
@@ -204,7 +204,7 @@ pub enum BlendEquation {
 
 
 /// Constants passed to WebGLRenderingContext.getParameter() to specify what information to return.
-#[derive(Debug,Clone, Copy)]
+#[derive(Debug,Clone, Copy, Serialize, Deserialize)]
 pub enum Parameter {
     /// Passed to getParameter to get the current RGB blend function. same as BlendEquationRgb
     BlendEquation = 0x8009,
@@ -340,7 +340,7 @@ pub enum Parameter {
 
 
 /// Constants passed to WebGLRenderingContext.getVertexAttrib().
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum VertexAttrib {
     /// Passed to getVertexAttrib to read back the current vertex attribute.
     Current = 0x8626,
@@ -362,7 +362,7 @@ pub enum VertexAttrib {
 
 
 /// Constants passed to WebGLRenderingContext.cullFace().
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum Culling {
     /// Passed to enable/disable to turn on/off culling. Can also be used with getParameter to find the current culling method.
     CullFace = 0x0B44,
@@ -376,7 +376,7 @@ pub enum Culling {
 
 
 /// Constants returned from WebGLRenderingContext.getError().
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum Error {
     /// Returned from getError.
     NoError = 0,
@@ -393,7 +393,7 @@ pub enum Error {
 }
 
 /// Constants passed to WebGLRenderingContext.frontFace().
-#[derive(Debug, Clone,Copy)]
+#[derive(Debug, Clone,Copy, Serialize, Deserialize)]
 pub enum FrontFaceDirection {
     /// Passed to frontFace to specify the front face of a polygon is drawn in the clockwise direction
     CW = 0x0900,
@@ -403,7 +403,7 @@ pub enum FrontFaceDirection {
 
 
 /// Constants passed to WebGLRenderingContext.depthFunc().
-#[derive(Debug,Clone, Copy)]
+#[derive(Debug,Clone, Copy, Serialize, Deserialize)]
 pub enum DepthTest {
     /// Passed to depthFunction or stencilFunction to specify depth or stencil tests will never pass. i.e. Nothing will be drawn.
     Never = 0x0200,
@@ -424,7 +424,7 @@ pub enum DepthTest {
 }
 
 /// Constants passed to WebGLRenderingContext.stencilFunc().
-#[derive(Debug, Clone,Copy)]
+#[derive(Debug, Clone,Copy, Serialize, Deserialize)]
 pub enum StencilTest {
     /// Passed to depthFunction or stencilFunction to specify depth or stencil tests will never pass. i.e. Nothing will be drawn.
     Never = 0x0200,
@@ -446,7 +446,7 @@ pub enum StencilTest {
 
 
 /// Constants passed to WebGLRenderingContext.stencilOp().
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum StencilAction {
     ///
     Keep = 0x1E00,
@@ -466,7 +466,7 @@ pub enum StencilAction {
 
 
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum PixelType {
     ///
     UnsignedByte = 0x1401,
@@ -480,7 +480,7 @@ pub enum PixelType {
 
 
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum PixelFormat {
     ///
     DepthComponent = 0x1902,
@@ -498,7 +498,7 @@ pub enum PixelFormat {
 
 
 /// Constants passed to WebGLRenderingContext.hint()
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum Hint {
     /// There is no preference for this behavior.
     DontCare = 0x1100,
@@ -511,7 +511,7 @@ pub enum Hint {
 }
 
 /// WebGLRenderingContext.texParameter[fi]() or WebGLRenderingContext.bindTexture() "target" parameter
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum TextureKind {
     ///
     Texture2d = 0x0DE1,
@@ -520,7 +520,7 @@ pub enum TextureKind {
 }
 
 /// WebGLRenderingContext.texParameter[fi]() "pname" parameter
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum TextureParameter {
     ///
     TextureMagFilter = 0x2800,
@@ -536,7 +536,7 @@ pub enum TextureParameter {
 
 
 /// WebGLRenderingContext.texImage2D() "target" parameter
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum TextureBindPoint {
     ///
     Texture2d = 0x0DE1,
@@ -555,7 +555,7 @@ pub enum TextureBindPoint {
 }
 
 /// WebGLRenderingContext.texParameter[fi]() "param" parameter
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum TextureMagFilter {
     ///
     Nearest = 0x2600,
@@ -564,7 +564,7 @@ pub enum TextureMagFilter {
 }
 
 /// WebGLRenderingContext.texParameter[fi]() "param" parameter
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum TextureMinFilter {
     ///
     Nearest = 0x2600,
@@ -581,7 +581,7 @@ pub enum TextureMinFilter {
 }
 
 /// WebGLRenderingContext.texParameter[fi]() "param" parameter
-#[derive(Debug, Clone, Copy,PartialEq)]
+#[derive(Debug, Clone, Copy,PartialEq, Serialize, Deserialize)]
 pub enum TextureWrap {
     ///
     Repeat = 0x2901,
@@ -593,7 +593,7 @@ pub enum TextureWrap {
 
 
 /// Constants passed to WebGLRenderingContext.hint()
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum Buffers {
     ///
     Framebuffer = 0x8D40,
@@ -671,7 +671,7 @@ pub enum Buffers {
 
 
 /// Constants passed to WebGLRenderingContext.hint()
-#[derive(Debug,Clone, Copy)]
+#[derive(Debug,Clone, Copy, Serialize, Deserialize)]
 pub enum PixelStorageMode {
     ///
     UnpackFlipYWebgl = 0x9240,
@@ -691,7 +691,7 @@ pub enum PixelStorageMode {
 
 
 ///
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum ShaderPrecision {
     ///
     LowFloat = 0x8DF0,
@@ -709,7 +709,7 @@ pub enum ShaderPrecision {
 
 
 /// Constants passed to WebGLRenderingContext.hint()
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum UniformType {
     ///
     FloatVec2 = 0x8B50,
@@ -746,7 +746,7 @@ pub enum UniformType {
 
 
 ///
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub enum TextureCompression {
     /// A DXT1-compressed image in an RGB image format.
     RgbDxt1 = 0x83F0,
